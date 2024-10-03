@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuromi Character Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <form class="kuromiform" action="KuromiCharacterForm.php" method="post">
+                <h1>Kuromi Character Form</h1>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+                <div id="response"></div>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="0" required placeholder="Enter your age">
+                
+                <input type="submit" value="Submit">
+            </form>
+
+            <button onclick="window.location.href='KuromiCharacterForm.php'" class="small-button">
+                Go to Kuromi Character Form
+            </button>
+        </div>
+
+        <div class="form-container">
+            <form class="bmiForm" id="bmiForm" action="KuromiBMI.php" method="post">
+                <h1>Kuromi BMI Calculator</h1>
+                
+                <label for="weight">Weight (kg):</label>
+                <input type="text" id="weight" name="weight" required placeholder="Enter weight">
+                
+                <label for="height">Height (cm):</label>
+                <input type="text" id="height" name="height" required placeholder="Enter height">
+                
+                <label for="birthdate">Birthdate:</label>
+                <input type="date" id="birthdate" name="birthdate" min="2000-01-01" required>
+                
+                <p id="result"></p>
+                <p id="classification"></p>
+
+                <button type="submit">Calculate BMI</button>
+            </form>
+        </div>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>

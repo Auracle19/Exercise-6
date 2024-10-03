@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-image: url('picture/kuromi.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+}
+
+.container {
+    display: flex; 
+    justify-content: center; 
+    align-items: stretch; 
+    width: 100%; 
+}
+
+form {
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px); 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 50px rgba(0, 0, 0, 0.7);
+    margin: 20px;
+    width: 400px;
+    min-height: 350px;
+    transition: background 0.3s ease, box-shadow 0.3s ease; 
+    position: relative; 
+}
+
+.kuromiform:hover {
+    background-image: url('picture/Kuromi1.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.8; 
+}
+
+.bmiForm:hover {
+    background-image: url('picture/Kuromi2.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.8; 
+}
+
+button, input[type="submit"] {
+    background-color: #4b0082; 
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #6a0dad; 
+    transform: scale(1.05); 
+}
+
+button:active, input[type="submit"]:active {
+    background-color: #320061; 
+    transform: scale(0.98); 
+}
+
+button, input[type="submit"] {
+    text-align: center;
+    letter-spacing: 1px; 
+}
+
+h1 {
+    color: #4b0082; 
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-weight: bold; 
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px; 
+    color: #4b0082; 
+    font-weight: bold; 
+}
+
+input[type="text"], input[type="number"], input[type="date"] {
+    width: 94%; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #4b0082; 
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    color: black; 
+    font-size: 16px; 
+    font-weight: bold; 
+}
+
+#result, #classification {
+    margin-top: 20px; 
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px; 
+    color: #4b0082; 
+}
+
+#classification {
+    color: #4b0082; 
+}
